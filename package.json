@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "start:ow-electron": "ow-electron .",
+    "build:ow-electron": "ow-electron-builder --publish=never"
   },
   "author": "ZephyrRatTFT",
   "license": "ISC",
@@ -21,6 +23,7 @@
     "electron": "^28.0.0"
   },
   "dependencies": {
+    "@overwolf/ow-electron": "^22.3.26",
     "electron-squirrel-startup": "^1.0.0"
   }
 }

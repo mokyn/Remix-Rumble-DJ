@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your App</title>
+</head>
+<body>
+    <h1>Welcome to Your App</h1>
+    <button id="login-button">Log in with Spotify</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // This ensures the button event listener is added after the DOM is fully loaded
+            document.getElementById('login-button').addEventListener('click', () => {
+                window.electronAPI.openExternal('http://localhost:8888/login');
+            });
+        });
+    </script>
+</body>
+</html>
